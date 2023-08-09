@@ -1,0 +1,575 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/js/all.min.js"></script>
+    <script src="https://kit.fontawesome.com/1142f72366.js" crossorigin="anonymous"></script>
+
+    <style>
+    
+    
+  @import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@100;200;300;400;500;600;700;800;900&family=Cairo:wght@700;900&family=Source+Serif+4:ital,opsz,wght@0,8..60,700;1,8..60,600&display=swap');
+
+        body{
+            color:#2E2E2E;
+            font-family: "Alexandria";
+            
+            
+        }
+/* 
+        @media only screen and (max-width: 768px) {
+            .img1{
+                height: 410px;
+                width: 410px;
+            }
+            .img2{
+                height:310px;
+                 width:410px;
+            }
+
+            .img3{
+                height:310px;
+                 width:410px;
+            }
+        } */
+
+        @media only screen and (max-width: 576px) {
+            .img1{
+                height:410px;
+                 width:410px;
+            }
+            .img2{
+                height:310px;
+                 width:410px;
+            }
+            .img3{
+                height:310px;
+                 width:410px;
+            }
+           .coure{
+            width: 50%;
+           }
+           .company{
+            width: 30%;
+           }
+
+           
+        }
+
+        .btn:hover{
+           background-color: rgba(52,97,255,1);
+           color: white;
+           border-color: rgba(52,97,255,1);
+        }
+        
+
+        :root{
+            --button-color:rgba(52,97,255,1) ;
+            --p-size:14.5px;
+            --sm-p-size:13px;
+            --price:#4b4b4b;
+            --coure:3px;
+            --p-size14:14;
+        }
+        .nav-color{
+            color:var(--nav-color)
+        }
+
+        .btn-color{
+            background-color: var(--button-color);
+        }
+
+        .p-size{
+             font-size: var(--p-size);
+        }
+
+        .sm-p-size{
+            font-size: var(--sm-p-size);
+        }
+        .fistWord::first-letter {
+            color:blue;
+            font-size: 70px;
+            margin-right: 10px;
+        }
+        .price{
+            color: var(--price);
+        }
+
+        .coure{
+            padding-left: var(--coure);
+            padding-right: var(--coure);
+        }
+
+        .p-size14{
+            font-size: var(--p-size14);
+        }
+
+
+        .zoomIn {
+  -webkit-animation-name: zoomIn;
+  animation-name: zoomIn;
+  -webkit-animation-duration: 1s;
+  animation-duration: 0.7s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  }
+  @keyframes zoomIn {
+  0% {
+  opacity: 0;
+  -webkit-transform: scale3d(.3, .3, .3);
+  transform: scale3d(.3, .3, .3);
+  }
+  50% {
+  opacity: 1;
+  }
+  } 
+
+
+  .fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  }
+  @keyframes fadeInRight {
+  0% {
+  opacity: 0;
+  -webkit-transform: translate3d(100%, 0, 0);
+  transform: translate3d(100%, 0, 0);
+  }
+  100% {
+  opacity: 1;
+  -webkit-transform: none;
+  transform: none;
+  }
+  } 
+  
+
+ 
+    </style>
+
+</head>
+<body>
+    <div class="nav pt-5 ">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <div class="container-fluid">
+                  <a class="navbar-brand d-flex" style="color: #313273;" href="#">
+                    <img src="img/Frame 19.png" height="45" width="74.53" alt="">
+                    <h2 class="pt-2 fw-medium" style="color: #313273;">Owlearn</h2>
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse  " id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                      <li class="nav-item">
+                        <a class="nav-link active me-4 text-primary" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link me-4" href="#">Bootcamp</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link me-4" href="#">Events</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link me-4" href="#">Article</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link me-5" href="#">Contact Us</a>
+                      </li>
+                    </ul>
+                    <div class="  justify-content-end">
+                        <div class="btn btn-outline-primary ps-4 pe-4" >Contact Us</div>
+                    </div>
+                  </div>
+                </div>
+              </nav>
+            
+
+            <div class="row gy-4">
+                <div class="col-lg-6 col-sm-12 pt-5 ">
+                    <p class="fistWord text-black" style="font-size: 55px; font-weight: 800; line-height: 91.8px; background: linear-gradient(to right, #171717 50% ,#5C5C5C 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent;" >Learn Any Skills to advance your career path</p>
+                    <img src="img/Vector 1.png" alt="" class="mb-4">
+                    <p style="line-height: 30px; padding-right: 100px;" class="fs-5  w-100">Want to improve your work skills? You need to study harder with the help of a great mentor to improve your performance at work</p>
+                    
+                    <div class="row gy-5 pt-4">
+                        <div class="col-lg-4 col-md-6 col-sm-6"><div class="btn-color btn  ps-4 pe-4 pt-2 pb-2 text-white" > Explore Path</div></div>
+                        <div class="col-lg-6 col-md-6 col-sm-6 d-flex ">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-12 pe-1">
+                                    <img  src="img/Ellipse 67.png" alt="" height="45px" width="45px">
+                                    <img style="margin-left: -18px;" src="img/Ellipse 68.png" alt="" height="45px" width="45px">
+                                    <img style="margin-left: -18px;" src="img/Ellipse 69.png" alt="" height="45px" width="45px">
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-sm-12">
+                                    <img src="img/Star.png" alt="" >
+                                    <p style="font-size: 10px;">(4,5/5 dari 10k Alumni)</p>
+                                </div>
+                            </div>
+                        </div>
+    
+                    </div>
+                </div>
+                <div class="col-lg-6 col-sm-12 d-none d-sm-block">
+                            <img src="img/newGroup.png" height="510px" width="510px" alt="" class="fadeInRight  img1 pt-4">
+                            <img src=" img/unsplash_hNiNxhUfCfQ.png" alt="" class="img11 ms-5" style="margin-top: -30px;">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="logo pt-5  pb-5">
+        <div class="container">
+            <div class="row pe-5 gy-5">
+                <div class="col-lg-5 col-sm-12"><p class="fs-3 fw-medium text-capitalize">We partner with more than 10+ companies</p></div>
+                <div class="col-lg-7 col-sm-12 d-flex align-items-center ps-4"><img src="img/Logo (1).png" alt="" height="40px" width="700px" 
+                style="width: 100%; height: auto;"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="about pt-5  pb-5">
+    <div class="container">
+        <div class="row gy-5 " >
+            <div class="col-lg-6 col-sm-12 position-relative d-none d-sm-block">
+                <img  src="img/online-course-of-study-2021-09-24-03-56-00-utc 1.png" height="400px" width="500px" alt="" class="img2">
+                <div class="position-absolute bottom-0 start-0 ms-5">
+                    <h5 class="text-white">Educational technology</h5>
+                    <div class="mb-4">
+                        <img class="d-inline" src="img/Vectorsmall.png" alt="">
+                        <p class="d-inline text-white">Jakarta, Indonesia</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h1 class="pb-4">Owlearn helps you Become Experienced</h1>
+                <p class="pb-3 lh-lg " style="width:450px ; font-size: 17px; width: 100%;height: auto;">Owlearn provides e-learning solutions for companies, universities and individual professionals. It allows users to create courses, and provides an integrated learning management system. Its offerings include digital course tools, study materials, IT infrastructure and other operations.</p>
+                <div class="fadeInRight btn-color btn text-white ps-4 pe-4 pt-2 pb-2">Become a Member</div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="course pt-5   pb-5">
+    <div class="container">
+        <div class="row">
+            <div class="col"><h2>Discover Course & Bootcamp</h2></div>
+            <div class="col d-flex align-items-center justify-content-end"><div class="btn btn-outline-primary ps-4 pe-4  btn-sm">Show All</div></div>
+        </div>
+        
+        
+            <div class="row gx-0 gy-3 d-flex justify-content-between mt-4">
+                <div class="coure col-lg-2 col-md-4 col-sm-6"><div class="p-size14 active btn btn-outline-primary rounded-pill w-100">All Program</div></div>
+                <div class="coure col-lg-2 col-md-4 col-sm-6"><div class="p-size14 btn btn-outline-dark rounded-pill w-100 " >UI/UX Design</div></div>
+                <div class="coure col-lg-2 col-md-4 col-sm-6" ><div class="p-size14 btn btn-outline-dark rounded-pill w-100 ">Product Management</div></div>
+                <div class="coure col-lg-2 col-md-4 col-sm-6"><div class="p-size14 btn btn-outline-dark rounded-pill w-100 ">Branding Design</div></div>
+                <div class="coure col-lg-2 col-md-4 col-sm-6" ><div class="p-size14 btn btn-outline-dark rounded-pill w-100" >Mobile Development</div></div>
+                <div class="coure col-lg-2 col-md-4 col-sm-6" ><div class="p-size14 btn btn-outline-dark rounded-pill w-100" >Web Developer</div></div>
+            
+            
+            </div>
+        <hr>
+
+    <div class="row g-4">
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card w-100 ">
+                <div class=" position-relative">
+                    <img src="img/image 20.png" class="card-img-top" alt="...">
+                    <div class="badge rounded-pill bg-warning position-absolute bottom-0 start-0 ms-3 mb-3"><img src="img/Frame 23.png" alt=""></div>
+                </div>
+                <div class="card-body ">
+                  <p class="sm-p-size date text-black-50">1 - 28 July 2022</p>
+                  <h4 class="card-title pe-5 ">Product Management Basic - Course</h4>
+                  <p class="p-size card-text fw-light ">Product Management Masterclass, you will learn with Sarah Johnson - Head of Product Customer Platform Gojek Indonesia.</p>
+                  
+                  <div class="footer d-flex justify-content-between align-items-center">
+                    <div class="text d-flex">
+                        <p class="price pe-2">$380</p>
+                        <p class="text-danger text-decoration-line-through">$500</p>
+                    </div>
+                    <button class="active btn  ps-4 pe-4 pt-2 pb-2 btn-sm">Show All</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card w-100">
+                <div class=" position-relative">
+                <img src="img/image 20 (1).png" class="card-img-top" alt="...">
+                <div class="badge rounded-pill bg-warning position-absolute bottom-0 start-0 ms-3 mb-3"><img src="img/Frame 23.png" alt=""></div>
+                </div>
+                <div class="card-body ">
+                  <p class="sm-p-size date text-black-50">1 - 28 July 2022</p>
+                  <h4 class="card-title pe-5 ">Front End Developer - Basic</h4>
+                  <p class="p-size card-text fw-light pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                  
+                  <div class="footer d-flex justify-content-between align-items-center">
+                    <div class="text d-flex">
+                        <p class="price pe-2" >$380</p>
+                        <p class="text-danger text-decoration-line-through">$500</p>
+                    </div>
+                    <button class="active btn ps-4 pe-4 pt-2 pb-2 btn-sm">Show All</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card w-100">
+                <div class=" position-relative">
+                    <img src="img/image 20 (2).png" class="card-img-top" alt="...">
+                    <div class="badge rounded-pill bg-warning position-absolute bottom-0 start-0 ms-3 mb-3"><img src="img/Frame 23.png" alt=""></div>
+                </div>
+                <div class="card-body ">
+                  <p class="sm-p-size date text-black-50" >1 - 28 July 2022</p>
+                  <h4 class="card-title pe-5 ">Front End Developer - Basic</h4>
+                  <p class="p-size card-text fw-light pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                  
+                  <div class="footer d-flex justify-content-between align-items-center">
+                    <div class="text d-flex">
+                        <p class="price pe-2">$380</p>
+                        <p class="text-danger text-decoration-line-through">$500</p>
+                    </div>
+                    <button class="active btn ps-4 pe-4 pt-2 pb-2 btn-sm">Show All</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card w-100" >
+                <div class=" position-relative">
+                    <img src="img/image 20 (3).png" class="card-img-top" alt="...">
+                    <div class="badge rounded-pill bg-warning position-absolute bottom-0 start-0 ms-3 mb-3"><img src="img/Frame 23.png" alt=""></div>
+                </div>
+                <div class="card-body ">
+                  <p class="sm-p-size date text-black-50">1 - 28 July 2022</p>
+                  <h5 class="card-title pe-5 pb-4">UX Design - Branstroming</h5>
+                  <p class="p-size card-text fw-light pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                  
+                  <div class="footer d-flex justify-content-between align-items-center">
+                    <div class="text d-flex">
+                        <p class="price pe-2">$380</p>
+                        <p class="text-danger text-decoration-line-through">$500</p>
+                    </div>
+                    <button class="active btn ps-4 pe-4 pt-2 pb-2 btn-sm">Show All</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card w-100" >
+                <div class=" position-relative">
+                    <img src="img/image 20 (4).png" class="card-img-top" alt="...">
+                    <div class="badge rounded-pill bg-warning position-absolute bottom-0 start-0 ms-3 mb-3"><img src="img/Frame 23.png" alt=""></div>
+                </div>
+                <div class="card-body ">
+                  <p class="sm-p-size date text-black-50">1 - 28 July 2022</p>
+                  <h5 class="card-title pe-5 pb-4">UI Design - Sketch</h5>
+                  <p class="p-size card-text fw-light pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                  
+                  <div class="footer d-flex justify-content-between align-items-center">
+                    <div class="text d-flex">
+                        <p class="price pe-2">$380</p>
+                        <p class="text-danger text-decoration-line-through">$500</p>
+                    </div>
+                    <button class="active btn ps-4 pe-4 pt-2 pb-2 btn-sm">Show All</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        <div class="col-lg-4 col-md-6 col-sm-12">
+            <div class="card w-100" >
+                <div class=" position-relative">
+                    <img src="img/image 20 (5).png" class="card-img-top" alt="...">
+                    <div class="badge rounded-pill bg-warning position-absolute bottom-0 start-0 ms-3 mb-3"><img src="img/Frame 23.png" alt=""></div>
+                </div>
+                <div class="card-body ">
+                  <p class="sm-p-size date text-black-50">1 - 28 July 2022</p>
+                  <h5 class="card-title pe-5 ">Graphic Design - Fundamental Design</h5>
+                  <p class="p-size card-text fw-light pe-5">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed eget magna enim fermentum porttitor.</p>
+                  
+                  <div class="footer d-flex justify-content-between align-items-center">
+                    <div class="text d-flex">
+                        <p class="price pe-2" style="color:#4b4b4b">$380</p>
+                        <p class="text-danger text-decoration-line-through">$500</p>
+                    </div>
+                    <button class="active btn  ps-4 pe-4 pt-2 pb-2 btn-sm">Show All</button>
+                  </div>
+                </div>
+              </div>
+        </div>
+
+        
+    </div>
+    </div>
+    </div>
+
+    <div class="succ mt-5  mb-5 mt-5" style="background: linear-gradient(90deg, rgba(52,97,255,1) 0%, rgba(23,52,156,1) 100%);">
+    <div class="container">
+        <div class="row gy-5">
+            <div class="col-lg-6 col-sm-12 d-flex align-items-center">
+                <div class="ps-1" >
+                    <h1 class=" text-white text-capitalize mb-4">Still confused about your career choice? consult with our experts</h1>
+                    <div class="btn bg-white text-primary ps-4 pe-4 pt-2 pb-2 mb-4">Contact Us</div>
+                </div>
+            </div>
+            <div class="col-lg-6 col-sm-12 d-none d-md-block">
+                <div>
+                    <!-- <img class="position-relative" src="img/Ellipse 70.png" alt="" > -->
+                    <img class=" ps-5" src="img/successful-black-student-girl-using-laptop-learnin-2021-09-14-17-37-12-utc 1.png" alt="" class="rounded">
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="campany pb-4 pt-5">
+    <div class="container ">
+        <div class="d-flex justify-content-center">
+            <h5>Our graduates have worked in</h5>
+        </div>
+
+        <div class="row gy-5  mt-2 mb-4 d-flex justify-content-between align-items-center">
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/clickup logo 1.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/dropbox.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/Elastic logo 1.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/GitHub_Logo 1.png" class="w-75" ></div>
+            <div class="company col-lg-3 col-md-4 col-sm-6"><img src="img/freshbooks-logo-1 1.png"class="w-75"  ></div>
+            <div class="company col-lg-3 col-md-4 col-sm-6"><img src="img/Group.png" class="w-75"></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/HubSpot-logo-color 2.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/intuit.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/Group (2).png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/Group (1).png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/Vector.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/SAP.png" class="w-75" ></div>
+            <div class="company col-lg-3 col-md-4 col-sm-6"><img src="img/Twilio—Segment—Horizontal—Green 1.png" class="w-75" ></div>
+            <div class="company col-lg-3 col-md-4 col-sm-6"><img src="img/Layer 1.png" class="w-75" ></div>
+            <div class="company col-lg-2 col-md-4 col-sm-6"><img src="img/Group (3).png" class="w-75" ></div>
+        </div>
+
+        
+
+    </div>
+    </div>
+
+
+    <div class="befor-footer mt-5 mb-5">
+    <div class="container  ">
+        <div class="row  gy-4">
+            <div class="col-lg-6 col-md-12 col-sm-12 d-none d-sm-block">
+                <img  src="img/image 21.png" alt="" class="img3 pe-5" height="400px" width="500px">
+            </div>
+    
+            <div class="col-lg-6 col-md-12 col-sm-12">
+                
+                    <h1>What did they say</h1>
+                    <!-- card-text ==>Removes bottom margins for a <p> element if it is the last child (or the only one) inside .card-body. -->
+                     <p class="card-text fw-light pt-5 pb-3" style="font-size: 18px; ">Higher education in the era of the industrial revolution 4.0 requires breakthrough learning using digital platforms that answer the challenges of millennial students to study anywhere, anytime and with leading-edge ICT technology. From student recruitment to teaching and learning administration processes,</p>
+                    <hr >
+                    <div class="row  gy-3  pt-2">
+                        <div class="col-lg-9 col-md-6 ">
+                            <h4>Briana Patton</h4>
+                            <p class="mb-0 fw-light text-black-50">Designer at Salesforce</p>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-12 ">
+                            <img src="img/arrow-right-circle.png" alt="">
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div class="footer pt-5 pe-5 ps-5 pb-5">
+    <div class="container">
+        <div class="row gx-0 gy-4">
+            <div class="col-lg-2  col-md-6 col-sm-12">
+                <h5 class="pb-3">Event & Bootcamp</h5>
+                <ul class="list-unstyled lh-lg">
+                    <li class="fw-light text-black-50">Web Development</li>
+                    <li class="fw-light text-black-50">Mobile Development</li>
+                    <li class="fw-light text-black-50">UI Design</li>
+                    <li class="fw-light text-black-50">UI Research</li>
+                    <li class="fw-light text-black-50">Presentation</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <ul class="list-unstyled lh-lg mt-5">
+                    <li class="fw-light text-black-50">Comunication</li>
+                    <li class="fw-light text-black-50">Video Production</li>
+                    <li class="fw-light text-black-50">Digital Marketing</li>
+                    <li class="fw-light text-black-50">Branding</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <h5 class="pb-3">About Owlearn</h5>
+                <ul class="list-unstyled lh-lg">
+                    <li class="fw-light text-black-50">Adminission Info</li>
+                    <li class="fw-light text-black-50">Article</li>
+                    <li class="fw-light text-black-50">Group & Referral Program</li>
+                    <li class="fw-light text-black-50">Careers</li>
+                </ul>
+            </div>
+
+            <div class="col-lg-3 col-md-6 col-sm-12 pe-5">
+                <h5 class="pb-3">Contact</h5>
+                <ul class="list-unstyled lh-lg">
+                    <li class="fw-light text-black-50">support@edtech.com</li>
+                    <li class="fw-light text-black-50">(+62) 85923935983</li>
+                    <li class="fw-light text-black-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. </li>
+                    <li>
+                        <img src="img/inst.png" alt="" class="me-2">
+                        <img src="img/twitter.png" alt="" class="me-2">
+                        <img src="img/Vector (1).png" alt="" class="me-2">
+                        <img src="img/Vector (2).png" alt="">
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    </div>
+
+    <div class="line-footer mt-4 d-flex align-items-center justify-content-center bg-black" style="height: 55px; ">
+       <p class="text-white pt-3">Copyright © 2021 Owlearn. All Rights Reserved.</p>
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
